@@ -1,32 +1,46 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+    <div class="container p-5">
+      <div class="row justify-content-evenly">
+        <div id="aside" class="col-3">
+          <Aside />
+        </div>
+        <div id="main" class="col-8">
+          <main class="text-light">
+            <Navbar />
+            <router-view />
+          </main>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
+<script>
+import Aside from "@/components/Aside.vue";
+import Navbar from "@/components/Navbar.vue";
 
-<style>
+export default {
+  name: "App",
+  components: {
+    Aside,
+    Navbar,
+  },
+};
+</script>
+<style scoped>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  background-color: hsl(0, 0%, 7%);
 }
-
-nav {
-  padding: 30px;
+#aside {
+  border: 1px solid hsl(0, 0%, 22%);
+  background-color: hsl(240, 2%, 12%);
+  border-radius: 1rem;
+  height: 80vh;
 }
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+#main {
+  border: 1px solid hsl(0, 0%, 22%);
+  background-color: hsl(240, 2%, 12%);
+  border-radius: 1rem;
+  height: 89.8vh;
 }
 </style>
