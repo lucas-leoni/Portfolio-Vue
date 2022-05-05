@@ -1,13 +1,13 @@
 <template>
-  <Main />
+  <SkillsMain />
 </template>
 <script>
-import Main from "@/components/Main.vue";
+import SkillsMain from "@/components/main/SkillsMain.vue";
 
 export default {
   name: "Resume",
   components: {
-    Main,
+    SkillsMain,
   },
 };
 </script>

@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import Skills from "../views/Skills.vue";
 import Portfolio from "../views/Portfolio.vue";
+import Register from "../views/Register.vue";
 
 Vue.use(VueRouter);
 
@@ -21,6 +22,11 @@ const routes = [
     path: "/portfolio",
     name: "Portfolio",
     component: Portfolio,
+  },
+  {
+    path: "/register",
+    name: "Register",
+    component: Register,
   },
 ];
 

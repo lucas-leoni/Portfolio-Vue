@@ -1,13 +1,13 @@
 <template>
-  <Main />
+  <PortfolioMain />
 </template>
 <script>
-import Main from "@/components/Main.vue";
+import PortfolioMain from "@/components/main/PortfolioMain.vue";
 
 export default {
   name: "Portfolio",
   components: {
-    Main,
+    PortfolioMain,
   },
 };
 </script>

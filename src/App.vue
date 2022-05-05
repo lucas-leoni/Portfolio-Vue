@@ -31,16 +31,17 @@ export default {
 #app {
   background-color: hsl(0, 0%, 7%);
 }
-#aside {
-  border: 1px solid hsl(0, 0%, 22%);
-  background-color: hsl(240, 2%, 12%);
-  border-radius: 1rem;
-  height: 80vh;
-}
+#aside,
 #main {
   border: 1px solid hsl(0, 0%, 22%);
   background-color: hsl(240, 2%, 12%);
   border-radius: 1rem;
-  height: 89.8vh;
+  min-height: 89.8vh;
 }
+/* #main {
+  border: 1px solid hsl(0, 0%, 22%);
+  background-color: hsl(240, 2%, 12%);
+  border-radius: 1rem;
+  height: 89.8vh;
+} */
 </style>

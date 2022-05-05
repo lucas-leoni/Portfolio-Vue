@@ -21,6 +21,11 @@
               Portfolio
             </router-link>
           </li>
+          <li>
+            <router-link class="navbar-brand text-light" to="/register">
+              Register
+            </router-link>
+          </li>
         </ul>
       </nav>
     </div>
@@ -39,6 +44,9 @@ export default {
       }
       if (this.$route.name === "Portfolio") {
         return "Portfolio";
+      }
+      if (this.$route.name === "Register") {
+        return "Register";
       }
     },
   },
