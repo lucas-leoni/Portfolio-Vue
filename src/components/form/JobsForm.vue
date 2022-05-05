@@ -38,7 +38,7 @@
         </div>
       </div>
     </div>
-    <div class="row pt-4">
+    <div class="row pt-4 justify-content-between">
       <div class="col-5">
         <button @click="cancelar" type="button" class="btn btn-secondary">
           Cancelar
